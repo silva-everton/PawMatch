@@ -1,6 +1,7 @@
 import { View, Text, Image } from 'react-native'
 import React from 'react'
 import { useUser } from '@clerk/clerk-expo'
+import Colors from './../../constants/Colors';
 
 export default function Header() {
 
@@ -20,7 +21,8 @@ export default function Header() {
         }}>Welcome</Text>
         <Text style={{
             fontSize: 20,
-            fontFamily: 'NunitoSans-ExtraBold',
+            fontFamily: 'NunitoSans-Black',
+            color: Colors.CORALPINK,
         }}>{user.fullName}</Text>
       </View> 
       <Image source={{uri:user?.imageUrl}} 
