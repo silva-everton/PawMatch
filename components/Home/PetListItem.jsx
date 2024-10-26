@@ -2,6 +2,8 @@ import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Colors from './../../constants/Colors';
 import { useRouter } from 'expo-router';
+import MarkFav from './../../components/MarkFav';
+
 
 export default function PetListItem({pet}) {
 
@@ -22,6 +24,15 @@ export default function PetListItem({pet}) {
         backgroundColor: Colors.WHITE,
         borderRadius: 10,
     }}>
+
+      <View style={{
+        position: 'absolute',
+        top: 10,
+        right: 10,
+        zIndex: 100,
+      }}>
+        <MarkFav pet={pet} color={'white'}/>
+      </View>
       <Image source={{uri:pet?.imageUrl}}
         style={{
           width: 170,
