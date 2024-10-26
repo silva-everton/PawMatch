@@ -45,7 +45,7 @@ export default function LoginScreen() {
         await setActive({ session: createdSessionId });
         console.log('Session set successfully.');
         // Navigate to the home screen
-        navigation.navigate('Home');
+        navigation.navigate('home');
       } else {
         console.error('OAuth completed, but no session created.');
       }

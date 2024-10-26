@@ -7,13 +7,13 @@ export default function PetListItem({pet}) {
     <View style={{
         marginRight: 15,
         //marginTop: 20,
-        padding: 10,
+        padding: 5,
         backgroundColor: Colors.WHITE,
         borderRadius: 10,
     }}>
       <Image source={{uri:pet?.imageUrl}}
         style={{
-          width: 150,
+          width: 170,
           height: 135,
           borderRadius: 10,
           objectFit: 'cover',
@@ -33,12 +33,12 @@ export default function PetListItem({pet}) {
         }}>
             <Text style={{
                 //fontSize: 16,
-                fontFamily: 'NunitoSans-Regular',
+                fontFamily: 'NunitoSans-Bold',
                 color: Colors.BLUE,
             }}>{pet?.breed}</Text>
             <Text style={{
                 fontSize: 12,
-                fontFamily: 'NunitoSans-Regular',
+                fontFamily: 'NunitoSans-Medium',
                 paddingHorizontal: 7,
                 borderRadius: 10,
                 color: Colors.CORALPINK,
