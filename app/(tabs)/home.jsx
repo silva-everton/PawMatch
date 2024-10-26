@@ -26,6 +26,7 @@ export default function Home() {
         <PetListByCategory />
 
         {/* List of Pets */}
+        {/* <PetList /> */}
 
         {/* Add New Pet Option */}
 

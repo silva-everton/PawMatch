@@ -1,10 +1,21 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Colors from './../../constants/Colors';
+import { useRouter } from 'expo-router';
 
 export default function PetListItem({pet}) {
+
+  const router=useRouter();
+
   return (
-    <View style={{
+    <TouchableOpacity
+    //this is to fetch the pet info the user passes from this section to the pet-details page
+    onPress={() => router.push({
+        pathname:'/pet-details',
+        params:pet
+    })}
+    
+    style={{
         marginRight: 15,
         //marginTop: 20,
         padding: 5,
@@ -44,6 +55,6 @@ export default function PetListItem({pet}) {
                 color: Colors.CORALPINK,
             }}>{pet?.age} YRS </Text>
         </View>
-    </View>
+    </TouchableOpacity>
   )
 }
