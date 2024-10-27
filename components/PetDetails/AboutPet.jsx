@@ -18,7 +18,8 @@ export default function AboutPet({pet}) {
       <Text numberOfLines={ readMore?3:20} style={{
         fontSize: 14,
         fontFamily: 'NunitoSans-Medium',
-        color: Colors.GREY1,
+        color: Colors.GREY1,        
+        textAlign: 'justify',
         
       }}>{pet.about} </Text>
      {readMore && 

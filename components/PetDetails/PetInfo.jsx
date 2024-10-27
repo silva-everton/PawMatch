@@ -31,6 +31,12 @@ export default function PetInfo({pet}) {
 
                 <Text style={{
                     fontSize: 14,
+                    //if the text is too long, it will be push the heart icon to the right
+                    ///how to fix this?
+                    flexShrink: 1,
+                    //flexWrap: 'wrap',
+                    //overflow: 'hidden',
+                    //flexDirection: 'row',
                     fontFamily: 'NunitoSans-Medium',
                     color: Colors.GREY1,
                 }}>{pet?.address}</Text>

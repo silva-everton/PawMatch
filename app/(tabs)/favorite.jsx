@@ -84,7 +84,7 @@ export default function Favorites() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Your Favorite Pets</Text>
+      <Text style={styles.title}>Your Favourite Pets</Text>
       {loading ? (
         <ActivityIndicator size="large" color={Colors.TURQUOISE} />
       ) : favPets.length > 0 ? (
